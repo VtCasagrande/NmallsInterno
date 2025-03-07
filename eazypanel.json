@@ -1,0 +1,23 @@
+{
+  "name": "nmalls",
+  "description": "Sistema de gestão de entregas com rastreamento em tempo real",
+  "type": "nodejs",
+  "nodejs": {
+    "version": "18.x",
+    "build": "npm run build",
+    "start": "npm start",
+    "port": 3000
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "NEXT_PUBLIC_API_URL": "https://api.seudominio.com.br"
+  },
+  "resources": {
+    "memory": "1024M",
+    "cpu": 1
+  },
+  "healthCheck": {
+    "path": "/api/health",
+    "timeout": 3
+  }
+} 

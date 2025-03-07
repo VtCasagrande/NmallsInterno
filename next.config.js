@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     domains: ['localhost'],
   },
+  output: 'standalone',
+  poweredByHeader: false,
+  compress: true,
+  swcMinify: true,
 }
 
 module.exports = nextConfig 
